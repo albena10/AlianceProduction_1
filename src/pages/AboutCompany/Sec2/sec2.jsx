@@ -30,7 +30,7 @@ const Sec2 = () => {
             </div>
             <div className="sec2-icons">
                 <div
-                    className=" border-2  border-[#EBEBF0] w-[218px] h-[148px] pt-[15px] pl-[20px]">
+                    className=" border-l-[2px] border-t-[2px] border-r-[2px] border-b-[2px]  border-[#EBEBF0] w-[228px] h-[148px] pt-[15px] pl-[20px]">
                     <svg className="mt-2" width="36" height="36" viewBox="0 0 36 36" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -41,7 +41,7 @@ const Sec2 = () => {
                         2017 года</p>
                 </div>
                 <div
-                    className=" border-2  border-[#EBEBF0] w-[218px] h-[148px] pt-[15px] pl-[20px]">
+                    className=" border-t-[2px] border-r-[2px] border-b-[2px]   border-[#EBEBF0] w-[228px] h-[148px] pt-[15px] pl-[20px]">
                     <svg className="mt-2" width="36" height="36" viewBox="0 0 36 36" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -52,7 +52,7 @@ const Sec2 = () => {
                         сертифицирована</p>
                 </div>
                 <div
-                    className="  border-2  border-[#EBEBF0] w-[218px] h-[148px] pt-[15px] pl-[20px]">
+                    className=" border-t-[2px] border-r-[2px] border-b-[2px]  border-[#EBEBF0] w-[228px] h-[148px] pt-[15px] pl-[20px]">
                     <svg className="mt-2" width="36" height="36" viewBox="0 0 36 36" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -63,7 +63,7 @@ const Sec2 = () => {
                         всех этапах</p>
                 </div>
                 <div
-                    className="  border-2  border-[#EBEBF0] w-[218px] h-[148px] pt-[15px] pl-[20px]">
+                    className=" border-t-[2px] border-r-[2px] border-b-[2px]  border-[#EBEBF0] w-[228px] h-[148px] pt-[15px] pl-[20px]">
                     <svg className="mt-2" width="36" height="36" viewBox="0 0 36 36" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -73,8 +73,7 @@ const Sec2 = () => {
                     <p className="pt-2">Возможны поставки по <br/>
                         всей России</p>
                 </div>
-                <div
-                    className=" border-2 border-[#EBEBF0] w-[218px] h-[148px] pt-[15px] pl-[20px]">
+                <div className=" border-t-[2px] border-r-[2px] border-b-[2px] border-[#EBEBF0] w-[228px] h-[148px] pt-[15px] pl-[20px]">
                     <svg className="mt-2" width="36" height="36" viewBox="0 0 36 36" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path

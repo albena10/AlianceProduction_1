@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-.sec6{
-    padding: 80px 0 0 70px;
-}
 .sec6-box{
     display: flex;
 }
@@ -23,7 +20,7 @@
     margin: 0;
 }
 .svg3{
-    padding: 0 15px 0 0;
+    margin: 0 0 0 0;
 }
 .top-left{
     Width:160px;
@@ -151,4 +148,31 @@
 }
 .burger-logo:hover{
     content: url("image/cec83dde9dfe03a96a3a8e492d839a0631c4d486 (1).png");
+}
+.ul-md{
+    margin-top: 24px;
+    margin-right: 48px;
+}
+
+@media (max-width: 420px) {
+    .sec6{
+        padding: 60px 0 0 35px;
+    }
+    .ul-md{
+        margin-top: 1px;
+        margin-right: 0;
+    }
+    .sec6-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec6-right{
+        width: 340px;
+        padding: 50px 0 0 35px;
+    }
+}
+@media (min-width: 1024px){
+    .sec6{
+        padding: 80px 0 0 70px;
+    }
 }

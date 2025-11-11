@@ -33,3 +33,43 @@
     font-weight: bold;
     padding: 14px 0 0 10px;
 }
+@media (max-width: 420px){
+    .sec5-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .p11{
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+        color: #828A99;
+        padding-top: 20px;
+        width: 360px;
+    }
+    .sec5-right h2{
+        font-size: 35px;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #292D33;
+        padding-top: 20px;
+    }
+    .sec5-left img{
+        width: 414px;
+        margin-bottom: 20px;
+    }
+    .sec5-right{
+        padding: 25px 0 0 35px;
+    }
+    .p12-mobile{
+        color: #5C8EE5;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 14px 0 0 10px;
+    }
+    .p12{
+        display: none;
+    }
+}
+@media (min-width: 1024px) {
+    .p12-mobile{
+        display: none;
+    }
+}

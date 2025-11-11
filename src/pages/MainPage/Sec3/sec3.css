@@ -76,3 +76,45 @@
     width: 360px;
     padding: 40px 0 0 30px;
 }
+@media (max-width: 420px) {
+    .sec3{
+        padding: 70px 0 0 35px;
+    }
+    .sec3-box h2{
+        font-size: 36px;
+    }
+    .sec3-card_top{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec3-card_bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec3-top-left{
+        width: 345px;
+    }
+    .sec3-top-center{
+        width: 345px;
+    }
+    .sec3-top-right{
+        width: 345px;
+    }
+    .sec3-bottom-left{
+        width: 345px;
+    }
+    .sec3-bottom-center{
+        width: 345px;
+    }
+    .sec3-bottom-right{
+        width: 345px;
+    }
+    .dekstop{
+        display: none;
+    }
+}
+@media (min-width: 1024px) {
+    .mobile{
+        display: none;
+    }
+}

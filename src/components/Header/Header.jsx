@@ -39,7 +39,7 @@ const Header = () => {
     };
     const goHome = () => {
         closeSuccess()
-            navigate("/"); // возвращаемся на главную
+            navigate("/");
         };
     return (
         <header>
@@ -50,16 +50,11 @@ const Header = () => {
                         <span></span>
                         <span></span>
                     </div>
-                    <svg className="svg4" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 5.5H22V6.5H2V5.5Z" fill="#292D33"/>
-                        <path d="M2 11.5H17V12.5H2V11.5Z" fill="#292D33"/>
-                        <path d="M22 17.5H2V18.5H22V17.5Z" fill="#292D33"/>
-                    </svg>
-                    <svg width="1" height="67" viewBox="0 0 1 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="svg-mob" width="1" height="67" viewBox="0 0 1 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="1" height="67" fill="#EBEBF0"/>
                     </svg>
-                    <svg className="w-[140px] h-[66px] pt-2" width="140" height="44" viewBox="0 0 140 44" fill="none"
+                    <svg className="svg1 w-[140px] h-[66px] mt-4" width="140" height="44" viewBox="0 0 140 44"
+                         fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_191_1865)">
                             <path fillRule="evenodd" clipRule="evenodd"
@@ -87,15 +82,76 @@ const Header = () => {
                             </clipPath>
                         </defs>
                     </svg>
-                    <div className={`modal-menu ${isMenuOpen ? 'active' : ''}`}>
-                        <ul>
-                            <li><Link to="/" onClick={toggleMenu}>О компании</Link></li>
-                            <li><Link to="/AboutCompany" onClick={toggleMenu}>Контрактное производство</Link></li>
-                            <li><Link to="/OwnMarks" onClick={toggleMenu}>Собственные торговые марки</Link></li>
-                            <li>Новости</li>
+                    <svg className="svg-desktop" width="1" height="93" viewBox="0 0 1 93" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <rect width="1" height="93" fill="#EBEBF0"/>
+                    </svg>
+
+                    <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
+                        <ul className="ul-overall">
+                            <li className="ul5 pl-3"><Link to="/" onClick={toggleMenu}>О компании</Link>
+                            </li>
+                            <li className="ul5 pl-2"><Link to="/AboutCompany" onClick={toggleMenu}>Контрактное
+                                производство</Link>
+                                <ul className="ul-mobile">
+                                    <li className="text-[#828A99] pt-2">Автомобильная химия</li>
+                                    <li className="text-[#828A99] pt-2">Бытовая химия</li>
+                                    <li className="text-[#828A99] pt-2">Дезинфицирующие средства</li>
+                                    <li className="text-[#828A99] pt-2">Пищевые аэрозоли</li>
+                                    <li className="text-[#828A99] pt-2">Косметическая продукция</li>
+                                    <li className="text-[#828A99] pt-2">Краски аэрозольные</li>
+                                </ul>
+                            </li>
+                            <li className="ul5 pl-2"><Link to="/OwnMarks" onClick={toggleMenu}>Собственные торговые
+                                марки</Link>
+                                <ul className="ul-mobile">
+                                    <li className="text-[#828A99] pt-2">Автохимия AG-Tech</li>
+                                    <li className="text-[#828A99] pt-2">Автохимия AP</li>
+                                </ul>
+                            </li>
+                            <li className="ul5 pl-2">Новости</li>
                         </ul>
-                    </div>
-                    <button onClick={openModal}>
+                        <svg className="svg-mobile w-[414px] h-1" width="375" height="1" viewBox="0 0 375 1" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect width="375" height="1" fill="#EBEBF0"/>
+                        </svg>
+                        <ul className="ul-mobile2 font-bold underline pt-3 pl-7 text-[19px]">+7 (499) 686-10-14</ul>
+                        <ul className="ul-mobile2">
+                            <li className="flex font-thin pl-7 pt-5">
+                                <svg className="mt-1 mr-3" width="12" height="17" viewBox="0 0 12 17" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.625 15.6875C6.34375 16.125 5.6875 16.125 5.40625 15.6875C0.84375 9.125 0 8.4375 0 6C0 2.6875 2.6875 0 6 0C9.34375 0 12 2.6875 12 6C12 8.4375 11.1875 9.125 6.625 15.6875ZM6 8.5C7.40625 8.5 8.5 7.40625 8.5 6C8.5 4.625 7.40625 3.5 6 3.5C4.625 3.5 3.5 4.625 3.5 6C3.5 7.40625 4.625 8.5 6 8.5Z"
+                                        fill="#5C8EE6"/>
+                                </svg>
+                                г. Мосвка, Холодильный пер. 4к1с8
+                            </li>
+                            <li className="flex font-thin pl-6 pt-5">
+                                <svg className="mt-1 mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.3125 9.96875C5.03125 10.5312 5.9375 11.2188 9.125 13.5312C9.75 14 10.9062 15.0312 12 15.0312C13.125 15.0312 14.25 14 14.9062 13.5312C18.0938 11.2188 19 10.5312 19.7188 9.96875C19.8438 9.875 20 9.96875 20 10.125V16.5C20 17.3438 19.3438 18 18.5 18H5.5C4.6875 18 4 17.3438 4 16.5V10.125C4 9.96875 4.1875 9.875 4.3125 9.96875ZM12 14C11.2812 14.0312 10.25 13.0938 9.71875 12.7188C5.5625 9.71875 5.25 9.4375 4.3125 8.6875C4.125 8.5625 4 8.34375 4 8.09375V7.5C4 6.6875 4.6875 6 5.5 6H18.5C19.3438 6 20 6.6875 20 7.5V8.09375C20 8.34375 19.9062 8.5625 19.7188 8.6875C18.7812 9.4375 18.4688 9.71875 14.3125 12.7188C13.7812 13.0938 12.75 14.0312 12 14Z"
+                                        fill="#5C8EE6"/>
+                                </svg>
+                                a.dragunov@tdaliance.ru
+                            </li>
+                            <li className="flex pl-6 pt-5">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.4439 16.7569C20.6455 15.32 18.5889 13.5935 17.7398 12.8422C17.5074 12.6365 17.4826 12.2806 17.694 12.0531C19.3144 10.3119 20.6104 8.31123 21.0565 7.1023C21.2533 6.56826 20.8459 6.004 20.2719 6.004H18.6044C18.0548 6.004 17.7331 6.20127 17.5799 6.51538C16.2332 9.27491 15.078 10.4692 14.2694 11.1672C13.8167 11.5581 13.1107 11.2343 13.1107 10.6393C13.1107 9.49306 13.1107 8.01133 13.1107 6.96057C13.1107 6.45096 12.6939 6.03865 12.1799 6.03865L9.13379 6.004C8.75036 6.004 8.53132 6.43808 8.76147 6.74242L9.26441 7.4644C9.45368 7.71454 9.55587 8.01888 9.55587 8.33122L9.55321 11.5826C9.55321 12.1482 8.86766 12.4245 8.46068 12.0282C7.08381 10.6873 5.88909 7.94913 5.45901 6.63979C5.33461 6.2608 4.97962 6.00489 4.57709 6.004L2.93452 6C2.31828 6 1.86777 6.58425 2.03527 7.1725C3.5361 12.4405 6.61552 17.4522 12.1035 17.9956C12.6442 18.0489 13.1107 17.6135 13.1107 17.0745V15.3658C13.1107 14.8757 13.495 14.4545 13.9891 14.4421C14.0064 14.4416 14.0237 14.4416 14.041 14.4416C15.4926 14.4416 17.1182 16.5543 17.6869 17.5424C17.8504 17.8267 18.1561 18 18.4867 18H20.6962C21.3408 18 21.7545 17.3162 21.4439 16.7569Z"
+                                        fill="#5C8EE6"/>
+                                </svg>
+                                <svg className="mb-4 ml-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.44444 4C5.99378 4 4 5.99378 4 8.44444V15.5556C4 18.0062 5.99378 20 8.44444 20H15.5556C18.0062 20 20 18.0062 20 15.5556V8.44444C20 5.99378 18.0062 4 15.5556 4H8.44444ZM8.44444 5.77778H15.5556C17.0258 5.77778 18.2222 6.97422 18.2222 8.44444V15.5556C18.2222 17.0258 17.0258 18.2222 15.5556 18.2222H8.44444C6.97422 18.2222 5.77778 17.0258 5.77778 15.5556V8.44444C5.77778 6.97422 6.97422 5.77778 8.44444 5.77778ZM16.4444 6.66667C16.2087 6.66667 15.9826 6.76032 15.8159 6.92702C15.6492 7.09372 15.5556 7.31981 15.5556 7.55556C15.5556 7.7913 15.6492 8.0174 15.8159 8.18409C15.9826 8.35079 16.2087 8.44444 16.4444 8.44444C16.6802 8.44444 16.9063 8.35079 17.073 8.18409C17.2397 8.0174 17.3333 7.7913 17.3333 7.55556C17.3333 7.31981 17.2397 7.09372 17.073 6.92702C16.9063 6.76032 16.6802 6.66667 16.4444 6.66667ZM12 7.55556C9.54933 7.55556 7.55556 9.54933 7.55556 12C7.55556 14.4507 9.54933 16.4444 12 16.4444C14.4507 16.4444 16.4444 14.4507 16.4444 12C16.4444 9.54933 14.4507 7.55556 12 7.55556ZM12 9.33333C13.4702 9.33333 14.6667 10.5298 14.6667 12C14.6667 13.4702 13.4702 14.6667 12 14.6667C10.5298 14.6667 9.33333 13.4702 9.33333 12C9.33333 10.5298 10.5298 9.33333 12 9.33333Z"
+                                        fill="#5C8EE6"/>
+                                </svg>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button className="button-phone" onClick={openModal}>
                         <svg className="ml-6" width="24" height="24" viewBox="0 0 24 24" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -104,7 +160,7 @@ const Header = () => {
                         </svg>
                     </button>
                     <p className="w-[24px] h-[24px] mt-[2px] text-[#5C8EE5] pl-10">
-                        <svg className="svg5" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                        <svg className="mt-[2px]" width="16" height="17" viewBox="0 0 16 17" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M15.9688 12.0822L15.2188 15.2384C15.125 15.7072 14.75 16.0197 14.2812 16.0197C6.40625 15.9884 0 9.58218 0 1.70718C0 1.23843 0.28125 0.86343 0.75 0.76968L3.90625 0.0196803C4.34375 -0.0740697 4.8125 0.17593 5 0.58218L6.46875 3.98843C6.625 4.39468 6.53125 4.86343 6.1875 5.11343L4.5 6.48843C5.5625 8.64468 7.3125 10.3947 9.5 11.4572L10.875 9.76968C11.125 9.45718 11.5938 9.33218 12 9.48843L15.4062 10.9572C15.8125 11.1759 16.0625 11.6447 15.9688 12.0822Z"
@@ -112,14 +168,15 @@ const Header = () => {
                         </svg>
                     </p>
                     <p>+7 (499) 686-10-14</p>
-                    <button onClick={openModal} className="button1 bg-blue-500 text-white px-4 py-2 rounded">Получить
+                    <button onClick={openModal}
+                            className="button1 bg-blue-500 text-white px-4 py-2">Получить
                         консультацию
                     </button>
                 </div>
             </div>
 
             {isModalOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                <div className="header-window fixed pt-20 bg-black bg-opacity-50 flex items-center z-50">
                     <div className="w-[420px] bg-white p-6 rounded-lg">
                     <div className="flex items-center justify-between mb-4">
                             <h2 className="font-bebas text-4xl">ЕСТЬ ВОПРОСЫ?</h2>
@@ -179,10 +236,10 @@ const Header = () => {
                 </div>
                 )}
             {isSuccessOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-white p-6 rounded-lg w-96">
+                <div className="header-end pt-20 fixed bg-black bg-opacity-50 flex items-center z-50">
+                    <div className="w-[420px] bg-white p-6 rounded-lg ">
                         <div className="relative flex items-center mb-4">
-                            <img src={img1form} alt=""/>
+                            <img className="w-[340px] h-[260px]" src={img1form} alt=""/>
                             <button onClick={closeSuccess}
                                     className="flex items-center justify-center w-10 h-10 border border-[#EBEBF0] rounded absolute top-1 right-2">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -194,12 +251,12 @@ const Header = () => {
                             </button>
                         </div>
                         <h2 className="font-bebas text-3xl">СПАСИБО ЗА ЗАЯВКУ!</h2>
-                        <p className="mb-4 text-[#828A99] pt-4">Наш менеджер свяжется с Вами в <br/>
+                        <p className="mb-3 text-[#828A99] pt-[14px] leading-1">Наш менеджер свяжется с Вами в <br/>
                             ближайшее время ответит на все <br/>
                             интересующие вопросы и поможем даже в <br/>
                             самых сложных случаях!</p>
                         <button type="button" onClick={goHome}
-                                className="bg-[#5C8EE5] mt-4 text-white px-4 py-2 rounded h-[56px] w-[340px]">
+                                className="bg-[#5C8EE5] mt-4 text-white px-4 py-2 rounded h-[56px] w-[360px]">
                             Вернуться на главную
                         </button>
                     </div>

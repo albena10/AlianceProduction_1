@@ -36,6 +36,9 @@ const Sec5 = () => {
                         <p className="p12">
                             Подробнее о компании
                         </p>
+                        <p className="p12-mobile">
+                            О нашей миссии
+                        </p>
                     </div>
                 </div>
             </div>

@@ -40,3 +40,22 @@
 .scheme3{
     padding-right: 25px;
 }
+@media (max-width: 420px) {
+    .scheme-box{
+        display: none;
+    }
+    .sec2-box{
+        padding-left: 35px;
+    }
+    .sec2-box h2{
+        font-size: 36px;
+    }
+}
+@media (min-width: 1024px) {
+    .sec2-mobile{
+        display: none;
+    }
+    .btn-m{
+        display: none;
+    }
+}

@@ -17,7 +17,7 @@
     font-family: 'Noto Sans',sans-serif;
     color: white;
 }
-.sec1-box button{
+.btn-header{
     Width: 313px;
     Height: 76px;
     background: #5C8EE5;
@@ -29,36 +29,95 @@
 }
 .sec1-icons{
     display: flex;
-    padding-top: 100px;
+    margin-top: 100px;
 }
 .icon1{
-    border: 2px solid #EBEBF033;
-    Width:238px;
+    Width: 218px;
     Height: 148px;
     padding: 15px 0 0 20px;
 }
 .icon4{
-    border: 2px solid #EBEBF033;
-    Width: 228px;
+    Width: 218px;
     Height: 148px;
     padding: 15px 0 0 20px;
 }
 .icon3{
-    border: 2px solid #EBEBF033;
-    Width:228px;
+    Width:218px;
     Height: 148px;
     padding: 15px 0 0 20px;
 }
 .icon2{
-    border: 2px solid #EBEBF033;
-    Width:228px;
+    Width:218px;
     Height: 148px;
     padding: 15px 0 0 20px;
 }
 .icon5{
-    border: 2px solid #EBEBF033;
-    Width:228px;
+    Width:218px;
     Height: 148px;
     padding: 15px 0 0 20px;
 }
+@media (max-width: 420px) {
+    .sec1-mobile { width:100%; margin-top: 2rem; }
 
+    .sec1{
+        background-image: url("image/746bb12e84aac86230db3074638b047619af26d3.jpg");
+        background-size: cover;
+    }
+    .sec1-box{
+        padding: 80px 0 0 35px;
+    }
+    .sec1-box h1{
+        font-size: 35px;
+        font-family: 'Bebus Neue',sans-serif;
+        color: white;
+        padding-top: 30px;
+    }
+    .sec1-box p{
+        font-size: 15px;
+        font-family: 'Noto Sans',sans-serif;
+        color: white;
+        line-height: 24px;
+    }
+    .sec1-box button{
+        Width: 340px;
+        Height: 76px;
+        background: #5C8EE5;
+        font-family: 'Noto Sans',sans-serif;
+        color: white;
+        font-size: 16px;
+        border-color: #5C8EE5;
+        margin-top: 35px;
+    }
+    .sec1-icons{
+        display: none;
+
+    }
+    .icon1{
+        Width: 218px;
+        Height: 140px;
+    }
+    .icon4{
+        Width: 250px;
+        Height: 140px;
+    }
+    .icon3{
+        Width:250px;
+        Height: 140px;
+    }
+    .icon2{
+        Width:250px;
+        Height: 140px;
+    }
+    .icon5{
+        Width:250px;
+        Height: 140px;
+    }
+}
+@media (min-width: 1024px) {
+    .sec1-mobile{
+        display: none;
+    }
+    .button-mobile{
+        display: none;
+    }
+}

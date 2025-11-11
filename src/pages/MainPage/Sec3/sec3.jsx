@@ -23,7 +23,8 @@ const Sec3 = () => {
                                 профессионалов позволяет оценить <br/>
                                 значение форм воздействия.
                             </p>
-                            <img className="ml-[37px] mt-1" src={img1} alt=""/>
+                            <img className="dekstop ml-[37px] mt-1" src={img1} alt=""/>
+                            <img className="mobile mt-1 w-[72px]" src={img1} alt=""/>
                         </div>
                         <div className="sec3-top-center">
                             <p className="p4">
@@ -35,7 +36,8 @@ const Sec3 = () => {
                                 нанотехнологии функционально <br/>
                                 разнесены на независимые элементы.
                             </p>
-                            <img className="ml-[37px] mt-[5px]" src={img2} alt=""/>
+                            <img className="dekstop ml-[37px] mt-[5px]" src={img2} alt=""/>
+                            <img className="mobile mt-[5px] w-[77px]" src={img2} alt=""/>
                         </div>
                         <div className="sec3-top-right">
                             <p className="p4">
@@ -45,7 +47,8 @@ const Sec3 = () => {
                                 Лишь интерактивные прототипы <br/>
                                 призваны к ответу.
                             </p>
-                            <img className="ml-[37px] mt-[25px]" src={img3} alt=""/>
+                            <img className="dekstop ml-[37px] mt-[25px]" src={img3} alt=""/>
+                            <img className="mobile mt-[25px]" src={img3} alt=""/>
                         </div>
                     </div>
                     <div className="sec3-card_bottom">
@@ -58,7 +61,8 @@ const Sec3 = () => {
                                 профессионалов позволяет оценить <br/>
                                 значение форм воздействия.
                             </p>
-                            <img className="ml-[37px] mt-[6px]" src={img3} alt=""/>
+                            <img className="dekstop ml-[37px] mt-[6px]" src={img3} alt=""/>
+                            <img className="mobile mt-[6px]" src={img3} alt=""/>
                         </div>
                         <div className="sec3-bottom-center">
                             <p className="p4">
@@ -68,7 +72,8 @@ const Sec3 = () => {
                                 Лишь интерактивные прототипы <br/>
                                 призваны к ответу.
                             </p>
-                            <img className="ml-[37px] mt-[5px]" src={img1} alt=""/>
+                            <img className="dekstop ml-[37px] mt-[5px]" src={img1} alt=""/>
+                            <img className="mobile mt-[5px]" src={img1} alt=""/>
                         </div>
                         <div className="sec3-bottom-right">
                             <p className="p4">
@@ -80,7 +85,8 @@ const Sec3 = () => {
                                 нанотехнологии функционально <br/>
                                 разнесены на независимые элементы.
                             </p>
-                            <img className="ml-[37px] mt-[26px]" src={img2} alt=""/>
+                            <img className="dekstop ml-[37px] mt-[26px]" src={img2} alt=""/>
+                            <img className="mobile mt-[5px]" src={img2} alt=""/>
                         </div>
                     </div>
                 </div>

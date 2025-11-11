@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
 }
-.header-box ul{
+.ul-overall{
     font-family: 'Noto Sans',sans-serif;
     color: #292D33;
     font-size: 14px;
@@ -15,10 +15,6 @@
     column-gap: 15px;
     padding-top: 40px;
     text-decoration-line: none;
-}
-.svg1{
-    width: 140px;
-    height: 66px;
 }
 .svg2{
     padding-top: 40px;
@@ -40,37 +36,31 @@
     font-size: 16px;
     border-color: #5C8EE5;
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
     .container{
         background: white;
         box-sizing: border-box;
+    }
+    .svg1{
+        margin-top: 4px;
+    }
+    .ul5{
+        padding-left: 24px;
+        font-size: 14px;
+        padding-top: 10px;
     }
     .header-box{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .header-box .svg4{
-        width: 40px;
-        height: auto;
-        margin: 0 auto;
-        left: 20px;
-        position: absolute;
-    }
     .header-box .svg5{
         display: none;
     }
-    .header-box ul{
-        font-size: 14px;
-        font-family: 'Noto Sans',sans-serif;
-        color: #292D33;
-        list-style: none;
-        column-gap: 15px;
-        padding-top: 20px;
-        text-decoration-line: none;
+    .header-box p{
         display: none;
     }
-    .header-box p{
+    .svg-desktop{
         display: none;
     }
     .header-box button{
@@ -85,55 +75,103 @@
         font-size: 20px;
         line-height: 50px;
         text-align: left;
-        display: block;
+        position: fixed;
+        margin-top: 50px;
     }
-    .burger-menu{
-        display: block;
-        width: 20px;
-        height: 20px;
-        position: relative;
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35px;
+        height: 16px;
         cursor: pointer;
+        z-index: 1001;
+        margin-left: 35px;
     }
-    .burger-menu span{
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        background: #FFFFFF;
-        left: 0;
-        transition: all 0.3s ease;
+    .burger-menu span {
+        display: block;
+        height: 2px;
+        background-color: #292D33;
+        transition: 0.3s;
     }
-    .burger-menu span:ntn-child (1){
-        top: 0;
+
+    .burger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
     }
-    .burger-menu span:ntn-child(2){
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .burger-menu span:ntn-child(3){
-        bottom: 0;
-    }
-    .burger-menu .active span:ntn-child(1){
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    .burger-menu .active span:ntn-child(2){
+    .burger-menu.active span:nth-child(2) {
         opacity: 0;
     }
-    .burger-menu .active span:ntn-child(3){
-        transform: rotate(-45deg) translate(7px, -7px);
+    .burger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
     }
-    .modal-menu{
+
+    .nav-menu {
         display: none;
-        top: 0;
-        left: 0;
-        width: 250px;
-        height: 100%;
-        background: #FFFFFF;
-        z-index: 1000;
-        padding: 20px;
-        box-sizing: border-box;
+        padding-top: 70px;
+        flex-direction: column;
         position: absolute;
+        z-index: 1000;
+    }
+    .ul-overall{
+        color: #292D33;
+        background-color: #FFFFFF;
+        margin-top: 590px;
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+        padding: 0;
+        width: 414px;
+    }
+    .nav-menu.active {
+        display: flex;
+        font-weight: bold;
+        background: #FFFFFF;
     }
     .button1{
+        display: none;
+    }
+    .ul-mobile{
+        display: flex;
+        flex-direction: column;
+        font-weight: lighter;
+        font-size: 13px;
+        padding-left: 15px;
+        line-height: 1.5;
+    }
+    .svg-mobile{
+        width: 414px;
+        margin: 20px 0 0 0 ;
+    }
+}
+@media (min-width: 1024px) {
+    .header-window{
+        justify-content: center;
+        inset: 0;
+    }
+    .ul-mobile{
+        display: none;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        gap: 20px;
+        box-shadow: none;
+    }
+    .button-phone{
+    display: none;
+    }
+    .header-end{
+        justify-content: center;
+        inset: 0;
+    }
+    .svg-mobile{
+        display: none;
+    }
+    .ul-mobile2{
         display: none;
     }
 }

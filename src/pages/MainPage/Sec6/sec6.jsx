@@ -14,8 +14,8 @@ const Sec6 = () => {
                     <h2>ПРОИЗВОДИМ АЭРОЗОЛЬНУЮ <br/>
                         ПРОДУКЦИЮ ДЛЯ РАЗНЫХ СФЕР</h2>
                     <div className="ul-box">
-                        <ul className="pt-6 pr-12">
-                            <li className="flex pb-2">
+                        <ul className="ul-md">
+                            <li className="flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -24,7 +24,7 @@ const Sec6 = () => {
                                 </svg>
                                 Химические производства
                             </li>
-                            <li className="flex pb-2">
+                            <li className="flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -33,7 +33,7 @@ const Sec6 = () => {
                                 </svg>
                                 Автомойки
                             </li>
-                            <li className="flex pb-2">
+                            <li className="flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -42,7 +42,7 @@ const Sec6 = () => {
                                 </svg>
                                 Пищевая продукция
                             </li>
-                            <li className="flex pb-2">
+                            <li className="flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -51,7 +51,7 @@ const Sec6 = () => {
                                 </svg>
                                 Лаки и краски
                             </li>
-                            <li className="flex pb-2">
+                            <li className="flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -61,8 +61,8 @@ const Sec6 = () => {
                                 Косметические средства
                             </li>
                         </ul>
-                        <ul className="pt-6">
-                            <li className="flex pb-2">
+                        <ul className="ul-md ">
+                            <li className="flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -71,7 +71,7 @@ const Sec6 = () => {
                                 </svg>
                                 Автомобильная косметика
                             </li>
-                            <li className="flex pb-2">
+                            <li className="flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -80,7 +80,7 @@ const Sec6 = () => {
                                 </svg>
                                 Косметика по уходу за одеждой
                             </li>
-                            <li className="flex pb-2">
+                            <li className="flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -89,7 +89,7 @@ const Sec6 = () => {
                                 </svg>
                                 Косметика по уходу за обувью
                             </li>
-                            <li className="flex pb-2">
+                            <li className="flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -98,7 +98,7 @@ const Sec6 = () => {
                                 </svg>
                                 Строительные материалы
                             </li>
-                            <li className="flex pb-2">
+                            <li className="flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path

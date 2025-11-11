@@ -10,15 +10,11 @@ const Sec5 = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
-        if (currentIndex < images.length - 1) {
-            setCurrentIndex(currentIndex + 1);
-        }
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
 
     const prevSlide = () => {
-        if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1);
-        }
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
     };
 
     return (
@@ -59,7 +55,7 @@ const Sec5 = () => {
                     <div
                         className="flex transition-transform duration-500 ease-in-out"
                         style={{
-                            transform: `translateX(calc(-${currentIndex * 40}% + 100px))`,
+                            transform: `translateX(calc(-${currentIndex * 20}%))`,
                         }}
                     >
                         {images.map((image, index) => (
