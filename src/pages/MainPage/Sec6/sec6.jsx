@@ -5,16 +5,17 @@ import imgColorful from './image/cec83dde9dfe03a96a3a8e492d839a0631c4d486 (1).pn
 
 const Sec6 = () => {
     return (
-        <section className="sec6">
+        <section className="sec6-1">
             <div className="sec6-box">
                 <div className="sec6-left">
-                    <svg className="mt-5" width="150" height="2" viewBox="0 0 150 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="mt-5" width="150" height="2" viewBox="0 0 150 2" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
                         <rect width="150" height="2" fill="#5C8EE6"/>
                     </svg>
-                    <h2>ПРОИЗВОДИМ АЭРОЗОЛЬНУЮ <br/>
-                        ПРОДУКЦИЮ ДЛЯ РАЗНЫХ СФЕР</h2>
+                    <p className="p-h2">ПРОИЗВОДИМ АЭРОЗОЛЬНУЮ <br/>
+                        ПРОДУКЦИЮ ДЛЯ РАЗНЫХ СФЕР</p>
                     <div className="ul-box">
-                        <ul className="ul-md">
+                        <ul className="ul-md1">
                             <li className="flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -61,8 +62,8 @@ const Sec6 = () => {
                                 Косметические средства
                             </li>
                         </ul>
-                        <ul className="ul-md ">
-                            <li className="flex mb-2">
+                        <ul className="ul-md2">
+                            <li className="li2 flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -71,7 +72,7 @@ const Sec6 = () => {
                                 </svg>
                                 Автомобильная косметика
                             </li>
-                            <li className="flex mb-2">
+                            <li className="li2 flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -80,7 +81,7 @@ const Sec6 = () => {
                                 </svg>
                                 Косметика по уходу за одеждой
                             </li>
-                            <li className="flex mb-2">
+                            <li className="li2 flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -89,7 +90,7 @@ const Sec6 = () => {
                                 </svg>
                                 Косметика по уходу за обувью
                             </li>
-                            <li className="flex mb-2">
+                            <li className="li2 flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -98,7 +99,7 @@ const Sec6 = () => {
                                 </svg>
                                 Строительные материалы
                             </li>
-                            <li className="flex mb-2">
+                            <li className="li2 flex mb-2">
                                 <svg className="svg3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -142,6 +143,42 @@ const Sec6 = () => {
                         </div>
                         <div className="bottom-right">
                             <img src={img2} alt="" className="burger-logo" data-colorful={imgColorful}/>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className="sec6-right_mobile2">
+                    <div className="burger-top1 flex">
+                        <div className="top-left border-[2px] border-[#EBEBF0]">
+                            <img src={img2} alt="" className="burger-logo mt-2" data-colorful={imgColorful}/>
+                        </div>
+                        <div className="top-right border-[2px] border-[#EBEBF0]">
+                            <img src={img2} alt="" className="burger-logo mt-2" data-colorful={imgColorful}/>
+                        </div>
+                    </div>
+                    <div className="burger-center1 flex">
+                        <div className="center-left">
+                            <img src={img2} alt="" className="burger-logo mt-2" data-colorful={imgColorful}/>
+                        </div>
+                        <div className="center-right">
+                            <img src={img2} alt="" className="burger-logo mt-2" data-colorful={imgColorful}/>
+                        </div>
+                    </div>
+                    <div className="burger-center2 flex">
+                        <div className="center-left">
+                            <img src={img2} alt="" className="burger-logo mt-2" data-colorful={imgColorful}/>
+                        </div>
+                        <div className="center-right">
+                            <img src={img2} alt="" className="burger-logo mt-2" data-colorful={imgColorful}/>
+                        </div>
+                    </div>
+                    <div className="burger-bottom1 flex">
+                        <div className="bottom-left">
+                            <img src={img2} alt="" className="burger-logo mt-2" data-colorful={imgColorful}/>
+                        </div>
+                        <div className="bottom-right">
+                            <img src={img2} alt="" className="burger-logo mt-2" data-colorful={imgColorful}/>
                         </div>
                     </div>
                 </div>
