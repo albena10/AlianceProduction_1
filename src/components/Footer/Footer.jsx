@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="flex">
+            <div className="footer-box flex">
                 <svg className="mb-[30px]" width="200" height="63" viewBox="0 0 200 63" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_191_2493)">
@@ -33,10 +33,10 @@ const Footer = () => {
                         </clipPath>
                     </defs>
                 </svg>
-                <h4 className="text-[20px] text-[#292D33] pl-[70px] pt-[15px] underline font-bold">+7 (499)
+                <h4 className="h4 text-[20px] text-[#292D33] pt-[15px] underline font-bold">+7 (499)
                     686-10-14</h4>
-                <ul className="flex text-[16px] text-[#292D33] pt-[20px]">
-                    <li className="flex ml-[80px]">
+                <ul className="ul-footer flex text-[16px] text-[#292D33] pt-[20px]">
+                    <li className="li-footer flex ml-[80px]">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.625 19.6875C12.3438 20.125 11.6875 20.125 11.4062 19.6875C6.84375 13.125 6 12.4375 6 10C6 6.6875 8.6875 4 12 4C15.3438 4 18 6.6875 18 10C18 12.4375 17.1875 13.125 12.625 19.6875ZM12 12.5C13.4062 12.5 14.5 11.4062 14.5 10C14.5 8.625 13.4062 7.5 12 7.5C10.625 7.5 9.5 8.625 9.5 10C9.5 11.4062 10.625 12.5 12 12.5Z"
@@ -44,7 +44,7 @@ const Footer = () => {
                         </svg>
                         г. Мосвка, Холодильный пер. 4к1с8
                     </li>
-                    <li className="flex  ml-[60px]">
+                    <li className="li-footer flex ml-[60px]">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M4.3125 9.96875C5.03125 10.5312 5.9375 11.2188 9.125 13.5312C9.75 14 10.9062 15.0312 12 15.0312C13.125 15.0312 14.25 14 14.9062 13.5312C18.0938 11.2188 19 10.5312 19.7188 9.96875C19.8438 9.875 20 9.96875 20 10.125V16.5C20 17.3438 19.3438 18 18.5 18H5.5C4.6875 18 4 17.3438 4 16.5V10.125C4 9.96875 4.1875 9.875 4.3125 9.96875ZM12 14C11.2812 14.0312 10.25 13.0938 9.71875 12.7188C5.5625 9.71875 5.25 9.4375 4.3125 8.6875C4.125 8.5625 4 8.34375 4 8.09375V7.5C4 6.6875 4.6875 6 5.5 6H18.5C19.3438 6 20 6.6875 20 7.5V8.09375C20 8.34375 19.9062 8.5625 19.7188 8.6875C18.7812 9.4375 18.4688 9.71875 14.3125 12.7188C13.7812 13.0938 12.75 14.0312 12 14Z"
@@ -52,7 +52,7 @@ const Footer = () => {
                         </svg>
                         a.dragunov@tdaliance.ru
                     </li>
-                    <li className="flex  ml-[50px]">
+                    <li className="li-footer flex  ml-[50px]">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M21.4439 16.7569C20.6455 15.32 18.5889 13.5935 17.7398 12.8422C17.5074 12.6365 17.4826 12.2806 17.694 12.0531C19.3144 10.3119 20.6104 8.31123 21.0565 7.1023C21.2533 6.56826 20.8459 6.004 20.2719 6.004H18.6044C18.0548 6.004 17.7331 6.20127 17.5799 6.51538C16.2332 9.27491 15.078 10.4692 14.2694 11.1672C13.8167 11.5581 13.1107 11.2343 13.1107 10.6393C13.1107 9.49306 13.1107 8.01133 13.1107 6.96057C13.1107 6.45096 12.6939 6.03865 12.1799 6.03865L9.13379 6.004C8.75036 6.004 8.53132 6.43808 8.76147 6.74242L9.26441 7.4644C9.45368 7.71454 9.55587 8.01888 9.55587 8.33122L9.55321 11.5826C9.55321 12.1482 8.86766 12.4245 8.46068 12.0282C7.08381 10.6873 5.88909 7.94913 5.45901 6.63979C5.33461 6.2608 4.97962 6.00489 4.57709 6.004L2.93452 6C2.31828 6 1.86777 6.58425 2.03527 7.1725C3.5361 12.4405 6.61552 17.4522 12.1035 17.9956C12.6442 18.0489 13.1107 17.6135 13.1107 17.0745V15.3658C13.1107 14.8757 13.495 14.4545 13.9891 14.4421C14.0064 14.4416 14.0237 14.4416 14.041 14.4416C15.4926 14.4416 17.1182 16.5543 17.6869 17.5424C17.8504 17.8267 18.1561 18 18.4867 18H20.6962C21.3408 18 21.7545 17.3162 21.4439 16.7569Z"
@@ -69,6 +69,10 @@ const Footer = () => {
             <svg className="svg8" width="1920" height="1" viewBox="0 0 1920 1" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <rect width="1920" height="1" fill="#EBEBF0"/>
+            </svg>
+            <svg className="svg-footer1" width="375" height="1" viewBox="0 0 375 1" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <rect width="375" height="1" fill="#EBEBF0"/>
             </svg>
             <div className="footer-center">
                 <div className="footer-left">
@@ -87,7 +91,8 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-center2">
-                    <h6 className="text-[16px] text-[#292D33] font-bold pt-[20px] pb-3 pl-[80px]">Собственные марки</h6>
+                    <h6 className="h6-footer text-[16px] text-[#292D33] font-bold pt-[20px] pb-3 pl-[80px]">Собственные
+                        марки</h6>
                     <ul className="ul3">
                         <li className="pb-[12px]">Автохимия AG-Tech</li>
                         <li>Автохимия AP</li>
@@ -101,15 +106,22 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <svg className="svg8" width="1920" height="1" viewBox="0 0 1920 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="svg8" width="1920" height="1" viewBox="0 0 1920 1" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="1920" height="1" fill="#EBEBF0"/>
             </svg>
+            <svg className="svg-footer" width="375" height="1" viewBox="0 0 375 1" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <rect width="375" height="1" fill="#EBEBF0"/>
+            </svg>
+
             <div className="footer-bottom">
-                <ul className="pt-[10px] pb-[10px]">
-                    <li>© 2022 «Aliance Production». Все права защищены.</li>
-                    <li className="pl-[20px]">Политики конфиденциальности</li>
-                    <li className="pl-[500px] flex">Сделано в _ <svg className="mt-[5px]" width="52" height="11" viewBox="0 0 52 11" fill="none"
-                                       xmlns="http://www.w3.org/2000/svg">
+                <ul className="ul6 pt-[10px] pb-[10px]">
+                    <li className="li-foot">© 2022 «Aliance Production». Все права защищены.</li>
+                    <li className="li-foot pl-[20px]">Политики конфиденциальности</li>
+                    <li className="li3 pl-[500px] flex">Сделано в _ <svg className="mt-[5px]" width="52" height="11"
+                                                                         viewBox="0 0 52 11" fill="none"
+                                                                         xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_129_565)">
                             <path
                                 d="M13.4243 6.35301V0.251953H15.6153V6.27665C15.6153 7.69226 16.4376 8.66538 18.005 8.66538C19.5724 8.66538 20.3781 7.69129 20.3781 6.27665V0.251953H22.5847V6.33832C22.5847 8.86411 21.0927 10.5832 18.005 10.5832C14.9153 10.5832 13.4243 8.84845 13.4243 6.35301Z"

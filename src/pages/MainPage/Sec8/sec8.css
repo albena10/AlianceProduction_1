@@ -3,7 +3,7 @@
 .sec8{
     padding-top: 160px;
 }
-.sec8-box{
+.sec8-box1{
     display: flex;
     Width: 1265px;
     Height:552px;
@@ -16,10 +16,10 @@
     top: -100px;
     left: -180px;
 }
-.sec8-right{
+.sec8-right1{
     padding:60px 0 0 550px;
 }
-.sec8-right h2{
+.sec8-right1 h2{
     font-size: 40px;
     font-family: "Bebas Neue",sans-serif;
     color: #292D33;
@@ -35,7 +35,6 @@
     Width:305px;
     Height:66px;
     background: #F0F2F5;
-    border: 1px #E4E4EB solid;
     margin-right: 20px;
     margin-top: 50px;
 }
@@ -43,8 +42,6 @@
     Width:305px;
     Height:66px;
     background: #F0F2F5;
-    border: 1px #E4E4EB solid;
-    margin-top: 50px;
     color: #292D33;
 }
 .btn2 input{
@@ -66,4 +63,41 @@
 }
 .bottom span{
     color: #F0F2F5;
+}
+@media (max-width: 420px){
+    .sec8{
+        padding-top: 50px;
+    }
+    .sec8-left{
+        display: none;
+    }
+    .sec8-right1{
+        padding: 30px 0 0 35px;
+    }
+    .sec8-box1{
+        width: 420px;
+        height: 740px;
+    }
+    .sec8-right1 h2{
+        font-size: 29px;
+        font-family: "Bebas Neue",sans-serif;
+        color: #292D33;
+    }
+    .p16{
+        font-size: 14px;
+        font-family: "Noto Sans",sans-serif;
+        color: #828A99;
+        padding-top: 15px;
+        width: 380px;
+    }
+    .sec8-bottom{
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+    }
+    .p-mobile{
+        margin-left: 0;
+        margin-top: 30px;
+        font-size: 14px;
+    }
 }

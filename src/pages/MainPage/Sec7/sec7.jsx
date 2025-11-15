@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './sec7.css'
-import img1 from './image/Frame 43 (1).png'
-import img2 from './image/Frame 43 (2).png'
+import img1 from './image/img1.png'
+import img2 from './image/img2.png'
 const Sec7 = () => {
     const cards = [
         {
@@ -99,9 +99,15 @@ const Sec7 = () => {
                         ))}
                     </div>
 
-                    <div className=" flex w-[200px] pl-[200px]">
+                    <div className=" flex ">
+                        <div className="pt-5">
+                            <img className="w-10" width="50" height="50"
+                                 src="https://img.icons8.com/ios/50/228BE6/horizontal-line.png"
+                                 alt="horizontal-line"/>
+                            <p className="p15">Весь блог</p>
+                        </div>
                         <button onClick={prevSlide}
-                                className=" flex mt-5 pt-5 h-[60px] bg-[#5C8EE5] pl-[15px] pr-[25px]">
+                                className=" flex mt-5 pt-5 h-[60px] bg-[#5C8EE5] pl-[15px] ml-12 pr-[25px]">
                             <svg width="31" height="16" viewBox="0 0 31 16" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path
