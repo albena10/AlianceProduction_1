@@ -76,7 +76,7 @@
     width: 360px;
     padding: 40px 0 0 30px;
 }
-@media (max-width: 420px) {
+@media (max-width: 768px) {
     .sec3{
         padding: 70px 0 0 35px;
     }

@@ -36,7 +36,7 @@
     font-size: 16px;
     border-color: #5C8EE5;
 }
-@media (max-width: 420px) {
+@media (max-width: 768px) {
     .container{
         background: white;
         box-sizing: border-box;

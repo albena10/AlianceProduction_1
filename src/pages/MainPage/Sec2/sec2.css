@@ -40,7 +40,7 @@
 .scheme3{
     padding-right: 25px;
 }
-@media (max-width: 420px) {
+@media (max-width: 768px) {
     .scheme-box{
         display: none;
     }
